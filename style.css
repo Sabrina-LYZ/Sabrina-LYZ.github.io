@@ -1,0 +1,174 @@
+/*Style sheet for vinegar culture*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+#container{
+	width: 80%;
+	margin: auto;
+}
+button{
+  display: block;
+  height: 50px;
+  background-color: #fcf1d2;
+  border: 2px #dfcb8e solid;
+  border-radius: 10px;
+
+}
+
+body{
+	font-family:'Quicksand',sans-serif;
+  font-size: 0.9em;
+}
+
+p{
+	padding: 10px;
+	line-height: 1.4em;
+}
+
+h3{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 0;
+	text-decoration: underline;
+
+}
+
+.selected{
+	background-color:#ffd356;
+  border-radius: 10px;
+}
+
+#greeting{
+  font-size: 0.8em;
+}
+
+nav{
+	background-color: #fcf1d2;
+	line-height: 2em;
+	border-radius: 10px;
+	border-bottom: 2px #dfcb8e solid;
+}
+a{
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+a:hover{
+	background-color: #ffd356;
+	border-radius: 10px;
+}
+
+a.dark:hover{
+  background-color: #616161;
+  border-radius: 10px;
+}
+
+footer{
+	text-align: center;
+	padding: 10px;
+}
+img{
+  width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+
+/*Layout*/
+nav {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+}
+
+div#title{
+  display: flex;
+  justify-content: space-between;
+}
+
+div#title > p{
+  margin-left: 30%;
+}
+@media (min-width: 980px){
+body{
+  font-size: 1em;
+}
+.wrapper{
+  display: grid;
+  column-gap: 20px;
+    row-gap: 10px;
+    grid-template-columns: repeat(3,1fr)
+}
+
+.history-image{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    height: auto;
+    border-top: 2px solid #dfcb8e;
+ }
+ /*terroir page*/
+.terroir{
+  display: grid;
+  column-gap: 20px;
+  row-gap: 10px;
+  grid-template-columns: repeat(2,1fr);
+}
+ .terroir1{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-bottom: 0;
+ }
+
+ .terroir2{
+  grid-column: 2/3;
+  grid-row: 1/4;
+  margin: auto;
+ }
+
+ .terroir3{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: 0;
+ }
+ .terroir4{
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin: 0;
+ }
+
+ /*protection page*/
+ .protection{
+  display: grid;
+  column-gap: 20px;
+  row-gap: 5px;
+  grid-template-columns: repeat(3,1fr);
+ }
+ .protection1{
+  grid-column: 1/2;
+  grid-row: 1/2;
+ }
+ .protection2{
+  grid-column: 1/2;
+  grid-row: 2/3;
+ }
+ .protection3{
+  grid-column: 2/3;
+  grid-row: 1/2;
+ }
+ .protection4{
+  grid-column: 2/3;
+  grid-row: 2/3;
+ }
+ .protection5{
+  grid-column: 3/4;
+  grid-row: 1/2;
+ }
+ .protection6{
+  grid-column: 3/4;
+  grid-row: 2/3;
+ }
+}
+
+
