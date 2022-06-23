@@ -91,7 +91,7 @@ div#title{
 div#title > p{
   margin-left: 30%;
 }
-@media (min-width: 980px){
+@media (min-width: 20em){
 body{
   font-size: 1em;
 }
